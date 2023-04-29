@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 600px;
+            margin: 0 auto;
+            border: solid 2px;
+            transition: 2s;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .bg {
+            background-color: rgb(20, 220, 80);
+            color: aliceblue;
+        }
+
+        .padding {
+            padding: 100px;
+        }
+
+        .dd {
+            color: rgb(210, 108, 30);
+            font-size: px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="box">
+        <h1>jquary</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates asperiores repellendus minima illo?
+            Vitae, enim reiciendis sint quidem incidunt accusamus saepe iure accusantium quibusdam aliquam ut aperiam
+            dicta provident!</p>
+    </div>
+
+    <button id="addclass">addcalss</button>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#addclass").click(function () {
+                $("#box").addClass("bg padding dd")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
