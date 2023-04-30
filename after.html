@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: rgb(135, 222, 197);
+            width: 600px;
+            align-items: center;
+            margin: 0 auto;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: crimson;
+        }
+
+        h2 {
+           text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: xx-large;
+            color: blueviolet;
+        }
+    </style>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    
+    <div id="box">
+        <h1>after add</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus temporibus exercitationem provident adipisci nam quam quia, culpa consequatur voluptas animi tempora cum quidem officiis quo eligendi, minima, sed molestias sint!
+        </p>
+    </div>
+
+    <button id="after">after btn</button>
+    <button id="before">before btn</button>
+    <script>
+        $('#after').click(function(){
+            $('#box').after('<h2> DD </h2>')
+        })
+        $('#before').dblclick(function (){
+            $('#box').before('<h3> hey </h3>')
+        })
+    </script>
+</body>
+</html>

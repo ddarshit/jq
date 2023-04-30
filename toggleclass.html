@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 500px;
+            margin: 0 auto;
+            border: solid 2px;
+            transition: 1s;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+
+        }
+        img{
+            width: 500px;
+        }
+
+        .bg {
+            background-color: rgb(141, 158, 11);
+            
+        }
+
+        .class {
+            padding: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="box">
+       <img src="./img/its me.jpeg" alt="">
+    </div>
+
+    <!-- <button id="addclass">addcalss</button>
+    <button id="removeclass">removeclass</button> -->
+    <button id="toggleclass">toggleclass</button>
+
+    <script>
+        // $("#addclass").dblclick(function () {
+        //     $('#box').addClass('bg class')
+        // });
+        // $("#removeclass").click(function () {
+        //     $('#box').removeClass('bg class')
+        // });
+        $("#toggleclass").click(function () {
+            $('#box').toggleClass('bg class')
+        });
+    </script>
+
+</body>
+
+</html>
