@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>height demo</title>
+  <style>
+  div {
+    width: 50px;
+    height: 70px;
+    float: left;
+    margin: 5px;
+    padding: 20px;
+    background: rgb(255, 0, 208);
+    cursor: pointer;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<div>D</div>
+<div>D</div>
+<div>D</div>
+
+ 
+<script>
+$( "div" ).one( "click", function() {
+  
+  $( this ).width(400).css({
+    cursor: "auto",
+    backgroundColor: "blue",
+    padding: "30px",
+    margin: "20px"
+  });
+});
+
+$("div").one("click", function (){
+    $(this).height(500).css({
+    cursor: "pointer",
+    backgroundColor: "yellow",
+    padding: "50px",
+    margin: "20px"
+    });
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+        }
+
+        #box {
+            background-color: rgb(184, 11, 103);
+            margin: 0 auto;
+        }
+
+        #box2 {
+            background-color: rgb(178, 184, 11);
+            margin: 0 auto;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <h1>Clone is here</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium distinctio dolore officiis.
+            Deserunt iusto sapiente repellat tenetur nisi. Impedit quidem fuga iusto ullam fugiat tenetur aperiam
+            officiis aut neque!</p>
+
+        <h2>oo hellow</h2>
+    </div>
+
+    <div id="box2">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Mollitia aut obcaecati eaque iste!
+            Asperiores dicta fuga molestias architecto fugiat, dolore dolorum? Quia in laborum iure quasi eum sunt.</p>
+    </div>
+
+
+    <button id="cln">clone</button>
+
+    <script>
+
+
+        // $("#cln").click(function(){
+        //     $("#box2 p").clone().prependTo("#box")
+        // })
+        $('#cln').dblclick(function () {
+            $('#box h1').clone().appendTo('#box2')
+        })
+    </script>
+</body>
+
+</html>
