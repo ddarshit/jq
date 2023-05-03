@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #aa1414;
+  color: white;
+  border: solid 1px #22c01c;
+  border-radius: 3px;
+  margin: 10px 0 0 0;
+}
+
+#panel {
+  padding: 100px;
+  display: none;
+}
+
+button {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel"><img src="../jquery/img/pexels-sam-kolder-2387873.jpg" alt="" width="50%"></div>
+
+<script src="slideupanddown.js"></script>
+</body>
+</html>
