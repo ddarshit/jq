@@ -1,0 +1,72 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            margin: 5px;
+            display: none;
+            position: relative;
+        }
+        img {
+            width: 300px;
+            margin: 20px 0 0 0;
+            position: absolute;
+        }
+       
+        #box1{
+          float: left;
+        }
+        #box2{
+          left: 300px;
+          float: left;
+        }
+        #box3{
+          left: 600px;
+          float: left;
+        }
+        .b1{
+            float: right;
+        }
+        .b2{
+            float: right;
+        }
+        .b3{
+            float: right;
+        }
+        
+
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+  <button id="fadein">fadein</button>
+  <button id="fadeout">fadeout</button>
+ 
+    <div id="box1" class="b1"><img src="../jquery/img/pexels-pixabay-36717.jpg" alt=""></div>
+    <div id="box2" class="b2"><img src="../jquery/img/pexels-ian-turnell-709552.jpg" alt=""></div>
+    <div id="box3" class="b3"><img src="../jquery/img/pexels-quang-nguyen-vinh-2131614.jpg" alt=""></div>
+    
+    
+    <script>
+        $('#fadein').click(function(){
+           $('#box1').fadeIn(2000)
+           $('#box2').fadeIn(5000)
+           $('#box3').fadeIn(10000)
+        })
+        $('#fadeout').click(function () {
+            $('.b1').fadeOut(10000)
+            $('.b2').fadeOut(5000)
+            $('.b3').fadeOut(2000)
+        })
+
+
+    </script>
+</body>
+</html>

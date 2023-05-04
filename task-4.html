@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>height demo</title>
+    <style>
+        .width {
+            width: 500px;
+        }
+
+        img {
+            width: 200px;
+            transition: 2s;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <div><img src="../jquery/img/its me.jpeg" alt=""></div>
+
+
+    <button id="#button">click</button>
+
+    <script>
+        $(document).ready(function(){
+        $("button").click(function() {
+
+            $("img").width(500).css({
+               
+            });
+        });
+    });
+    </script>
+
+</body>
+
+</html>

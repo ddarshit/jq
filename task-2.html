@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            /* width: 600px;
+            margin: 0 auto; */
+            transition: 1s;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .bg {
+            background-color: crimson;
+            color: aliceblue;
+        }
+
+        .border {
+            border: solid 5px blue;
+            /* border-color: red; */
+        }
+
+        .class {
+            padding: 100px;
+        }
+
+        .main-heading {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            font-family: fantasy;
+        }
+
+        .second-heading {
+            background-color: rgb(116, 29, 29);
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .third-heading {
+            background-color: rgb(181, 58, 58);
+            color: aliceblue;
+            font-family: fantasy;
+            font-size: 35px;
+            text-align: left;
+        }
+
+        .a {
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <div id="box">
+        <h1>jquary</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptates asperiores repellendus minima illo?
+            Vitae, enim reiciendis sint quidem incidunt accusamus saepe iure accusantium quibusdam aliquam ut aperiam
+            dicta provident!</p>
+    </div> -->
+
+    <table align="center" cellpadding="5px" id="box">
+        <div>
+            <tr class="main-heading">
+                <th colspan="4" align="left">LEADERBOARD</th>
+                <td><img src="../CSS0/img.C/dd2 logo.png" alt="DD" width="50px"></td>
+
+            </tr>
+        </div>
+        <div>
+            <tr class="second-heading">
+                <th style="border-top-left-radius:5px ; border-bottom-left-radius:5px ;  ">POSITION</th>
+                <th colspan="2">PLAYER</th>
+                <th>TODAY</th>
+                <th style="border-top-right-radius:5px ; border-bottom-right-radius:5px ;  ">TOTAL</th>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>1</td>
+                <td><img src="../CSS0/img.C/usa.png" alt="usa" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>34</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>2</td>
+                <td><img src="../CSS0/img.C/germany.png" alt="germany" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>5</td>
+                <td>33</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>3</td>
+                <td><img src="../CSS0/img.C/spain.png" alt="spain" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>4</td>
+                <td>30</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>4</td>
+                <td><img src="../CSS0/img.C/usa.png" alt="usa" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>26</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>5</td>
+                <td><img src="../CSS0/img.C/venezuela.png" alt="venezuela" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>25</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>6</td>
+                <td><img src="../CSS0/img.C/great-britain-.png" alt="great-britain" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>22</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>7</td>
+                <td><img src="../CSS0/img.C/south-korea.png" alt="korea" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>2</td>
+                <td>18</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>8</td>
+                <td><img src="../CSS0/img.C/luxembourg.png" alt="luxembourg" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>2</td>
+                <td>16</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>9</td>
+                <td><img src="../CSS0/img.C/finland.png" alt="finland" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+        </div>
+
+
+
+        <div>
+            <tr class="a">
+                <td>10</td>
+                <td><img src="../CSS0/img.C/great-britain-.png" alt="britain" width="30px"></td>
+                <td>PLAYER NAME HERE</td>
+                <td>3</td>
+                <td>11</td>
+            </tr>
+        </div>
+
+        <div>
+            <tr class="third-heading">
+                <th colspan="5" style="border-radius: 5px;">ROUND NUMBER 2</th>
+            </tr>
+        </div>
+
+    </table>
+
+
+    <button id="toggleclass">toggleclass</button>
+
+    <script>
+
+        $("#toggleclass").click(function () {
+            $('#box').toggleClass('border')
+        });
+    </script>
+
+</body>
+
+</html>
