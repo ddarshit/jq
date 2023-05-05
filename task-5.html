@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>css demo</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid hotpink;
+            float: left;
+            position: relative;
+        }
+
+        #box1 img {
+            width: 100px;
+            position: absolute;
+            border: solid 2px yellowgreen;
+        }
+
+        #box2 img {
+            width: 100px;
+            position: absolute;
+            left: 200px;
+            margin: 10px;
+            border: solid 2px yellowgreen;
+        }
+
+        #box3 img {
+            width: 100px;
+            position: absolute;
+            left: 400px;
+            margin: 20px;
+            border: solid 2px yellowgreen;
+        }
+
+        #box4 img {
+            width: 100px;
+            position: absolute;
+            left: 600px;
+            margin: 30px;
+            border: solid 2px yellowgreen;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <p id="result">&nbsp;</p>
+    <div>1<img src="../jquery/img/pexels-quang-nguyen-vinh-2131614.jpg" alt="" id="box1" width="200px"></div>
+    <div>2<img src="../jquery/img/pexels-ray-bilcliff-2055389.jpg" alt="" id="box2" width="200px"></div>
+    <div>3<img src="../jquery/img/pexels-bg nature.jpg" alt="" id="box3" width="200px"></div>
+    <div>4<img src="../jquery/img/pexels-luis-del-río-15286.jpg" alt="" id="box4" width="200px"></div>
+
+
+    <script>
+        $("div").click(function () {
+            var html = ["The clicked div has the following styles:"];
+
+            var styleProps = $(this).css([
+                "width", "color", "margin", "padding", "border", "position"
+            ]);
+            console.log(styleProps);
+            $(this).css({
+                color : "gold",
+                fontsize : "20px"
+            });
+            console.log(styleProps);
+            // return false;
+            $.each(styleProps, function (prop, value) {
+                html.push(prop + " : " + value);
+                console.log(html);
+            });
+
+            $("#result").html(html.join("<hr>"));
+        });
+    </script>
+
+</body>
+
+</html>

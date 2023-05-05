@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 5px;
+            width: 150px;
+            
+        }
+
+        .active {
+            display: block;
+            margin: 0 auto;
+            font-size: 0;
+            border: solid 2px rgb(179, 15, 15);
+            background-color: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-left-color: transparent;
+            animation: rotate 1.4s ease 0.5s infinite;
+        }
+       
+        .stop {
+            display: none;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".op").toggleClass("active")
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button class="button">Start Animation</button>
+
+
+    <div class="op"></div>
+
+
+</body>
+
+</html>
